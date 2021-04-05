@@ -1,0 +1,65 @@
+mysql> use coordext;
+Database changed
+mysql> describe ceusuarios;
++---------+------------+------+-----+---------+-------+
+| Field   | Type       | Null | Key | Default | Extra |
++---------+------------+------+-----+---------+-------+
+| CElogin | varchar(8) | NO   | PRI |         |       |
+| CEsenha | varchar(8) | NO   |     |         |       |
++---------+------------+------+-----+---------+-------+
+2 rows in set (0.03 sec)
+
+mysql> select * from ceusuarios;
++---------+----------+
+| CElogin | CEsenha  |
++---------+----------+
+| admin   | CExt2011 |
++---------+----------+
+1 row in set (0.00 sec)
+
+mysql> describe inscsemeng;
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| Icodigo     | int(11)       | NO   | PRI | NULL    | auto_increment |
+| Ititulo     | varchar(200)  | NO   |     |         |                |
+| Inome1      | varchar(50)   | NO   |     |         |                |
+| Isobre1     | varchar(20)   | NO   |     |         |                |
+| Icurso1     | varchar(4)    | NO   |     |         |                |
+| Iperiodo1   | int(11)       | NO   |     |         |                |
+| Iano1       | int(11)       | NO   |     |         |                |
+| Iemail1     | varchar(40)   | NO   |     |         |                |
+| Inome2      | varchar(50)   | YES  |     | NULL    |                |
+| Isobre2     | varchar(20)   | YES  |     | NULL    |                |
+| Icurso2     | varchar(4)    | YES  |     | NULL    |                |
+| Iperiodo2   | int(11)       | YES  |     | NULL    |                |
+| Iano2       | int(11)       | YES  |     | NULL    |                |
+| Iemail2     | varchar(40)   | YES  |     | NULL    |                |
+| Inome3      | varchar(50)   | YES  |     | NULL    |                |
+| Isobre3     | varchar(20)   | YES  |     | NULL    |                |
+| Icurso3     | varchar(4)    | YES  |     | NULL    |                |
+| Iperiodo3   | int(11)       | YES  |     | NULL    |                |
+| Iano3       | int(11)       | YES  |     | NULL    |                |
+| Iemail3     | varchar(40)   | YES  |     | NULL    |                |
+| Inome4      | varchar(50)   | YES  |     | NULL    |                |
+| Isobre4     | varchar(20)   | YES  |     | NULL    |                |
+| Icurso4     | varchar(4)    | YES  |     | NULL    |                |
+| Iperiodo4   | int(11)       | YES  |     | NULL    |                |
+| Iano4       | int(11)       | YES  |     | NULL    |                |
+| Iemail4     | varchar(40)   | YES  |     | NULL    |                |
+| Inome5      | varchar(50)   | YES  |     | NULL    |                |
+| Isobre5     | varchar(20)   | YES  |     | NULL    |                |
+| Icurso5     | varchar(4)    | YES  |     | NULL    |                |
+| Iperiodo5   | int(11)       | YES  |     | NULL    |                |
+| Iano5       | int(11)       | YES  |     | NULL    |                |
+| Iemail5     | varchar(40)   | YES  |     | NULL    |                |
+| Iresumo     | varchar(1000) | NO   |     |         |                |
+| Iorientador | varchar(20)   | NO   |     |         |                |
+| Iaceite     | varchar(3)    | NO   |     | NAO     |                |
+| Iescopo     | varchar(3)    | NO   |     | NAO     |                |
+| Ibanner     | varchar(3)    | NO   |     | NAO     |                |
+| Imaterial   | varchar(3)    | NO   |     | Nao     |                |
+| Ilista      | varchar(500)  | YES  |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+39 rows in set (0.02 sec)
+
